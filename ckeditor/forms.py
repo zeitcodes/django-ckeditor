@@ -7,7 +7,6 @@ try:
 except ImportError:
     import Image
 import os
-from math import floor
 from django.conf import settings
 
 
@@ -24,8 +23,8 @@ class CKEditorUploadForm(forms.Form):
             image = Image.open(upload.file)
             if image.size[0] > MAX_RESOLUTION[0] or image.size[1] > MAX_RESOLUTION[1]:
                 ratio = max(image.size[0] / MAX_RESOLUTION[0], image.size[1] / MAX_RESOLUTION[1])
-                width = floor(image.size[0] / ratio)
-                height = floor(image.size[1] / ratio)
+                width = int(image.size[0] / ratio)
+                height = int(image.size[1] / ratio)
                 image = image.resize((width, height), Image.ANTIALIAS)
                 upload.file = temp.NamedTemporaryFile(suffix='.upload')
                 name, ext = os.path.splitext(upload.name)
