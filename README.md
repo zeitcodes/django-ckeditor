@@ -6,7 +6,7 @@ Django CKEditor contains the JavaScript WYSIWYG editor, [CKEditor](http://ckedit
 Installation
 ------------
 
-Run `pip install hg+https://bitbucket.org/nextscreenlabs/django-ckeditor`
+Run `pip install django-ckedit`
 
 Add `ckeditor` to your `INSTALLED_APPS` setting:
 
