@@ -17,3 +17,4 @@ syntax: regexp
 ^build/
 ^dist/
 ^.tox/
+^env/
