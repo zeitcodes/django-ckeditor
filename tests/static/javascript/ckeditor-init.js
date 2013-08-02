@@ -4,7 +4,7 @@ $(document).ready(function() {
         height: 400,
 		toolbar:
 		[
-			['Format', 'Bold', 'Italic', 'Underline', 'Strikethrough', '-', 'Subscript', 'Superscript', '-', 'TextColor'],
+			['Format', 'Bold', 'Italic', 'Underline', 'Strikethrough', '-', 'Subscript', 'Superscript', '-', 'TextColor', 'PageBreak'],
 			['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
             ['NumberedList', 'BulletedList', '-', 'Blockquote'],
             ['Link', 'Unlink'],
