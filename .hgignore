@@ -10,6 +10,7 @@ Thumbs.db
 *.cache
 *.egg-info
 *.svn
+*.DS_Store
 
 syntax: regexp
 
@@ -18,3 +19,4 @@ syntax: regexp
 ^dist/
 ^.tox/
 ^env/
+^.idea/
